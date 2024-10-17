@@ -1,10 +1,8 @@
 <script lang="ts">
   import type { ButtonProps } from "$lib/props/ButtonProps";
-  import { defineCustomElements } from "@zicho/component-lib/loader";
-  defineCustomElements();
+  import "@zicho/component-lib/dist/collection/components/my-button/my-button.css";
 
   let { label }: ButtonProps = $props();
 </script>
 
-<my-button {label}></my-button>
-
+<button class="btn">{label}</button>
